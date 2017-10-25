@@ -17,6 +17,8 @@
     <string name="pref_scrolling_summ">Allows scrolling in the WebView</string>
     <string name="pref_javascript">Enable Javascript</string>
     <string name="pref_javascript_summ">Enables Javascript in the WebView</string>
+    <string name="pref_screen_zoom">Panel Zoom Level</string>
+    <string name="pref_screen_zoom_summ">Scale Display for Panels</string>
     <string name="pref_kiosk_mode">Kiosk Mode</string>
     <string name="pref_kiosk_mode_summ">Use Habpanel in Kiosk Mode. This hides the title bar and the menu</string>
     <string name="pref_habpanel_title">HabPanel</string>
@@ -50,7 +52,6 @@
     <string name="pref_app_name_default">Explorer</string>
     <string name="pref_app_package_summ">Package name of the main menu app shortcut</string>
     <string name="pref_app_package_default">com.alphainventor.filemanager</string>
-
     <string name="not_connected">not connected</string>
     <string name="pref_settings_title">HabpanelViewer</string>
     <string name="pref_app_enabled">Show application shortcut in menu</string>

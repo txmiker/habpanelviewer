@@ -14,6 +14,7 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -484,9 +485,12 @@ public class MainActivity extends AppCompatActivity
             url += "?kiosk=off";
         }
 
+        String zoom = mySharedPreferences.getString("pref_screen_zoom", "100");
+
         if (!url.equals(mWebView.getUrl())) {
             mWebView.clearCache(true);
             mWebView.clearHistory();
+            mWebView.setInitialScale(Integer.parseInt(zoom));
             mWebView.loadUrl(url);
         }
     }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
         android:key="pref_key_settings"
         android:title="@string/pref_settings_title">
@@ -169,5 +170,12 @@
             android:key="pref_javascript"
             android:summary="@string/pref_javascript_summ"
             android:title="@string/pref_javascript" />
+        <ListPreference
+            android:defaultValue="100"
+            android:entries="@array/zoom"
+            android:entryValues="@array/zoom"
+            android:key="pref_screen_zoom"
+            android:summary="@string/pref_screen_zoom_summ"
+            android:title="@string/pref_screen_zoom" />
     </PreferenceCategory>
 </PreferenceScreen>
