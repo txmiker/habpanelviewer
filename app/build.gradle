@@ -7,8 +7,8 @@ android {
         applicationId "de.vier_bier.habpanelviewer"
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 1
-        versionName "0.9.9pre"
+        versionCode 3
+        versionName '0.9.13pre'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
     }
@@ -18,6 +18,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
@@ -25,7 +27,6 @@ dependencies {
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
     implementation(name: 'eventsource-debug', ext: 'aar')
     implementation 'org.jboss.netty:netty:3.2.10.Final'
     implementation 'com.github.mukeshsolanki:MarkdownView-Android:1.0.4'
